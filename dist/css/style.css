@@ -1,3 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.btn {
+  border: solid 2px #D2BF95;
+  width: 160px;
+  height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 14px;
+  position: relative;
+  background-color: #fff; }
+
+.btn:before {
+  content: "";
+  border: solid 2px #D2BF95;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+
 .header {
   height: 90px;
   background-color: #EDEDED;
@@ -14,7 +39,10 @@
             flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .header__owner {
     position: relative;
     margin-left: 60px; }
@@ -26,7 +54,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    width: 50px;
+    width: 55px;
     height: 50px;
     top: 15px;
     left: -60px;
@@ -39,15 +67,41 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 6px 0 0 160px; }
+    margin-top: 6px; }
     .header__nav a {
       text-decoration: none;
       color: #424242;
       font-size: 18px; }
   .header__icon {
-    margin-left: 240px;
     margin-top: 10px; }
     .header__icon img {
       width: 50px; }
+
+.start {
+  width: 1140px;
+  height: 380px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .start__descr {
+    width: 390px;
+    height: 100%; }
+    .start__descr h2 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-top: 80px; }
+    .start__descr hr {
+      border: 1px solid #3D3A35; }
+    .start__descr p {
+      font-size: 20px; }
+  .start__img {
+    height: 380px;
+    margin-top: 40px; }
+    .start__img img {
+      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

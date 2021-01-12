@@ -1,3 +1,25 @@
+*
+    box-sizing: border-box
+.btn
+    border: solid 2px #D2BF95
+    width: 160px
+    height: 50px
+    text-transform: uppercase
+    text-align: center
+    padding-top: 14px
+    position: relative
+    background-color: #fff
+.btn:before
+    content: ""
+    border: solid 2px #D2BF95
+    width: 160px
+    height: 50px
+    position: absolute
+    background-color: #fff
+    right: 0
+    top: 0
+    z-index: -1
+    
 .header
     height: 90px
     background-color: #EDEDED
@@ -8,6 +30,7 @@
         display: flex
         flex-direction: row
         align-items: center
+        justify-content: space-between
     &__owner
         position: relative
         margin-left: 60px
@@ -19,7 +42,7 @@
         content: ""
         display: inline-block
         position: absolute
-        width: 50px
+        width: 55px
         height: 50px
         top: 15px
         left: -60px
@@ -28,13 +51,35 @@
         width: 400px
         display: flex
         justify-content: space-between
-        margin: 6px 0 0 160px 
+        margin-top: 6px
         & a 
             text-decoration: none
             color: #424242
             font-size: 18px
     &__icon
-        margin-left: 240px
         margin-top: 10px
         & img
             width: 50px
+.start
+    width: 1140px
+    height: 380px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    &__descr
+        width: 390px
+        height: 100%
+        & h2 
+            font-size: 36px
+            font-weight: 300
+            margin-top: 80px
+        & hr 
+            border: 1px solid #3D3A35
+        & p 
+            font-size: 20px
+    &__img
+        height: 380px
+        margin-top: 40px
+        & img
+            height: 100%
+
