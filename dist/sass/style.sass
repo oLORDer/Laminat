@@ -19,11 +19,15 @@
     right: 0
     top: 0
     z-index: -1
+
+.color-gold
+    color: #FFA648
     
 .header
-    height: 90px
+    height: 126px
     background-color: #EDEDED
-    margin-top: 30px
+    margin-top: 44px
+    padding-top: 32px
     &__container
         max-width: 1140px
         margin: 0 auto
@@ -33,36 +37,36 @@
         justify-content: space-between
     &__owner
         position: relative
-        margin-left: 60px
         & h1 
-            font-weight: 100
+            margin-left: 52px
+            font-family: 'Century Gothic'
+            font-weight: 400
+            font-size: 25px
+            letter-spacing: 3px
         & strong 
+            font-family: 'Century Gothic'
             font-weight: 700
+            color: #876F2F
     &__owner::before
         content: ""
         display: inline-block
         position: absolute
-        width: 55px
-        height: 50px
-        top: 15px
-        left: -60px
-        background: url("../icons/main-icon.jpg") center center/cover no-repeat
+        width: 47px
+        height: 60px
+        top: -17px
+        left: 0px
+        background: url("../icons/logo.svg") center center/cover no-repeat
     &__nav
-        width: 400px
+        width: 666px
         display: flex
         justify-content: space-between
-        margin-top: 6px
         & a 
             text-decoration: none
             color: #424242
             font-size: 18px
-    &__icon
-        margin-top: 10px
-        & img
-            width: 50px
 .start
     width: 1140px
-    height: 380px
+    height: 426px
     margin: 0 auto
     display: flex
     justify-content: space-between
@@ -73,13 +77,43 @@
             font-size: 36px
             font-weight: 300
             margin-top: 80px
+            font-family: 'Gabriela'
         & hr 
             border: 1px solid #3D3A35
         & p 
             font-size: 20px
     &__img
-        height: 380px
+        width: 666px
         margin-top: 40px
         & img
             height: 100%
+            width: 100%
+.advantages
+    max-width: 1140px
+    height: 290px
+    margin: 48px auto 0 auto
+    &__title
+        font-size: 30px
+    &__info
+        height: 65px
+        margin: 63px auto 0 auto
+        display: flex
+        justify-content: space-between
+    &__div
+        height: 55px
+        width: 305px
+        display: flex
+        justify-content: space-between
+        font-size: 22px
+        align-items: center
+    &-icon
+        max-height: 55px
+        max-width: 86px
+        & img 
+            display: block
+            max-height: 100%
+            max-width: 100% 
+    &__div-descr
+        margin-left: 20px
+    
 
