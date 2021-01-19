@@ -218,8 +218,8 @@ button:focus, button:active {
 
 .grid__laminat {
   display: grid;
-  grid-template-columns: 320px 320px 446px;
-  grid-template-rows: 247px 104px 104px 104px;
+  grid-template-columns: 28% 28% 39%;
+  grid-template-rows: 38% 16% 16% 16%;
   grid-gap: 27px;
   grid-template-areas: "gl-1 gl-2 gl-3" "gl-4 gl-5 gl-3" "gl-4 gl-6 gl-3" "gl-4 gl-7 gl-3"; }
 
@@ -233,8 +233,8 @@ button:focus, button:active {
   grid-area: gl-3; }
 
 #gl-33 {
-  width: 446px;
-  height: 638px; }
+  width: 100%;
+  height: 100%; }
 
 .gl-4 {
   grid-area: gl-4; }
