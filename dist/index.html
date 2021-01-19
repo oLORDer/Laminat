@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laminat</title>
+    <title>Laminat Vitaliy</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,9 +13,10 @@
         <div class="header__container">
             <div class="header__owner"><h1><strong>амінат</strong> Віталій </h1></div>
             <nav class="header__nav"> 
-            <a href="#">відгуки</a>
-            <a href="#">переваги</a>
-            <a href="#">ассортимент</a>
+            <a href="#" class="hr-bot">відгуки</a>
+            <a href="#advantages">переваги</a>
+            <a href="#">каталог</a>
+            <a href="#">бренди</a>
             <a href="#">контакти</a>
             </nav>
         </div>
@@ -30,7 +31,7 @@
             <!-- вариант-1 который закоментирован, так же в css ток чекай сасс пока что. думаю соеденить кнопки между собой по id и вырубить эффект фокуса, ток пока хз как))
             Хотя по приколу можно не соединять и написать какй-то вызов функции что б комп залагал при нажатии на заднюю кнопку))-->
             <!-- <button class="btn">відгуки</button> -->
-            <div class="mainbtn">
+            <div class="mainbtn startbtn">
                 <button class="btn">відгуки</button>
                 <button class="btnBack"></button>
             </div>
@@ -39,7 +40,8 @@
     </section>
 
     <section class="advantages">
-        <h2 class="advantages__title">Переваги</h2>
+        <h2 class="advantages__title" id="advantages">Переваги</h2>
+        <hr class="advantages__hr">
         <div class="advantages__info">
             <div class="advantages__div">
                 <div class="advantages__div-icon"><img src="icons/check_all.svg" alt="check_all"></div>
@@ -55,5 +57,51 @@
             </div>
         </div>
     </section>
+
+    <main class="catalog">
+        <div class="catalog__title"><h2>Каталог</h2>
+        <hr>
+        </div>
+        <div class="catalog__tab-head">
+            <div class="catalog__tab-head__item active">Ламінат</div>
+            <div class="catalog__tab-head__item">Паркетна дошка</div>
+            <div class="catalog__tab-head__item">Плинтуса</div>
+        </div>
+        <div class="catalog__tab-content">
+            <div class="catalog__tab-content__item grid__laminat active">
+                <img src="img/img-1.png" alt="#" class="gl-1">
+                <img src="img/img-2.png" alt="#" class="gl-2">
+                <img src="img/img-3.png" alt="#" class="gl-3" id="gl-33">
+                <img src="img/img-4.png" alt="#" class="gl-4">
+                <img src="img/img-5.png" alt="#" class="gl-5">
+                <img src="img/img-6.png" alt="#" class="gl-6">
+                <img src="img/img-7.png" alt="#" class="gl-7">
+            </div>
+            <div class="catalog__tab-content__item">22222</div>
+            <div class="catalog__tab-content__item">33333</div>
+        </div>
+    </main>
+
+    <section class="discount">
+        <div class="discount__title"><h3>Каталог низьких цін</h3></div>
+        <hr>
+        <div class="discount__tab-head">
+            <div class="discount__tab-head__item active">Ламінат</div>
+            <div class="discount__tab-head__item">Паркетна дошка</div>
+            <div class="discount__tab-head__item">Плинтуса</div>
+        </div>
+        <div class="discount__tab-content">
+            <div class="discount__tab-content__item active">
+                <img src="img/ds-1.png" alt="#">
+                <img src="img/ds-1.png" alt="#">
+                <img src="img/ds-1.png" alt="#">
+                <img src="img/ds-1.png" alt="#">
+            </div>
+            <div class="discount__tab-content__item">GGGGGG</div>
+            <div class="discount__tab-content__item">YYYYYY</div>
+        </div>
+    </section>
+
+<script src="js/script.js"></script>
 </body>
 </html>

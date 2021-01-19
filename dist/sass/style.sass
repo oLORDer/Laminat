@@ -2,6 +2,10 @@
     box-sizing: border-box
 h1, h2, h3
     font-family: 'Gabriela regular'
+    margin: 0
+hr 
+        border: solid 1px #503414
+        margin: 15px 0 0 0
 // .btn
 //     border: solid 2px #D4A766
 //     width: 160px
@@ -30,6 +34,9 @@ h1, h2, h3
     height: 50px
     position: relative
 
+button:focus, button:active
+    outline: none
+
 .btn
     border: solid 2px #D4A766
     width: 160px
@@ -42,6 +49,13 @@ h1, h2, h3
     font-family: 'Gabriela Regular'
     letter-spacing: 2px
     z-index: 7
+    &:hover
+        cursor: pointer
+
+// .hr-bot
+//     border-bottom: 2px solid #412A0F
+//     width: 60px
+//     height: 30px
 
 .btnBack
     border: solid 2px #D4A766
@@ -51,12 +65,14 @@ h1, h2, h3
     z-index: 5
     top: 3px
 
+.startbtn
+    margin-top: 40px
+
 .color-gold
     color: #FFA648
     
 .header
     height: 126px
-    background-color: #EDEDED
     margin-top: 44px
     padding-top: 32px
     &__container
@@ -84,7 +100,7 @@ h1, h2, h3
         position: absolute
         width: 47px
         height: 60px
-        top: -17px
+        top: -37px
         left: 0px
         background: url("../icons/logo.svg") center center/cover no-repeat
     &__nav
@@ -95,6 +111,10 @@ h1, h2, h3
             text-decoration: none
             color: #424242
             font-size: 18px
+            &:hover
+                border-bottom: 2px solid #412A0F
+                height: 30px
+                
 .start
     width: 1140px
     height: 426px
@@ -109,19 +129,21 @@ h1, h2, h3
             font-weight: 400
             margin-top: 80px
         & hr 
-            border: 1px solid #3D3A35
+            margin-bottom: 40px
         & p 
             font-size: 20px
     &__img
         width: 666px
-        margin-top: 40px
+        margin-top: 10px
         & img
             height: 100%
             width: 100%
 .advantages
     max-width: 1140px
-    height: 290px
+    height: 200px
     margin: 48px auto 0 auto
+    &__hr
+        width: 160px
     &__title
         font-size: 30px
         font-weight: 400
@@ -145,4 +167,100 @@ h1, h2, h3
             max-height: 100%
             max-width: 100% 
     
+.catalog
+    max-width: 1140px
+    margin: 90px auto 0 auto
+    &__title
+        width: 1140px
+        margin: 0 auto
+        & hr
+            width: 120px
+    &__tab-head
+        width: 1140px
+        margin: 28px auto 16px auto
+        display: flex
+        font-family: Exo 2
+        font-weight: 500
+        font-size: 24px
+        &__item
+            margin-right: 68px
+            color: grey  
+            &.active
+                color: #282828
+            &:hover
+                cursor: pointer
+    &__tab-content
+        position: relative
+        width: 1140px
+        &__item
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            transform: translateX(100px)
+            & img 
+                display: block
+                width: 320px
+            &.active
+                transition: all 2s
+                opacity: 1
+                transform: translateX(0)
+                position: static
+.grid__laminat
+    display: grid
+    grid-template-columns: 28% 28% 39%
+    grid-template-rows: 44% 19% 19% 19%
+    grid-gap: 27px
+    grid-template-areas: "gl-1 gl-2 gl-3" "gl-4 gl-5 gl-3" "gl-4 gl-6 gl-3" "gl-4 gl-7 gl-3"
+.gl-1
+    grid-area: gl-1 
+.gl-2
+    grid-area: gl-2
+.gl-3
+    grid-area: gl-3 
+#gl-33
+    width: 446px
+    height: 638px
+.gl-4
+    grid-area: gl-4 
+.gl-5 
+    grid-area: gl-5 
+.gl-6
+    grid-area: gl-6 
+.gl-7 
+    grid-area: gl-7
 
+
+
+.discount
+    max-width: 1140px
+    height: 435px
+    margin: 64px auto 0 auto
+    &__title
+        font-size: 24px
+    & hr 
+        width: 305px
+    &__tab-head
+        display: flex
+        font-size: 20px
+        width: 500px
+        justify-content: space-between
+        color: #8C8C88
+        &__item
+            &.active
+                color: #282828
+            &:hover
+                cursor: pointer
+    &__tab-content
+        max-width: 1140px
+        display: flex
+        justify-content: space-between
+        &__item
+
+            & img 
+                width: 274px
+            &.active
+                transition: all 2s
+                opacity: 1
+                transform: translateX(0)
+                position: static
