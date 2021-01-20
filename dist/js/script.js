@@ -1,5 +1,8 @@
 const tabs = document.querySelectorAll('.catalog__tab-head__item');
 const contents = document.querySelectorAll('.catalog__tab-content__item');
+const tabDiscounts = document.querySelectorAll('.discount__tab-head__item');
+const contentDiscounts = document.querySelectorAll('.discount__tab-content__item');
+
 
 tabs.forEach((tab, index) => {
     tab.onclick = () => {
@@ -19,23 +22,22 @@ function changeTab(index) {
     contents[index].classList.add('active');
 }
 
-const tabDiscounts = document.querySelectorAll('.discount__tab-head__item');
-const contentDiscounts = document.querySelectorAll('.discount__tab-head__item');
 
-tabDiscounts.forEach((tabDiscount, numb) => {
+
+tabDiscounts.forEach((tabDiscount, DisNumb) => {
     tabDiscount.onclick = () => {
-        changeTabDis(numb)
+        changeTabDis(DisNumb)
     };
 });
 
-function changeTabDis(numb) {
+function changeTabDis(DisNumb) {
     for (let tabDiscount of tabDiscounts) {
-        tabDiscount.classList.remove('active');
+        tabDiscount.classList.remove('discountOn');
     }
-    tabDiscounts[numb].classList.add('active');
+    tabDiscounts[DisNumb].classList.add('discountOn');
 
     for (let elD of contentDiscounts) {
-        elD.classList.remove('active');
+        elD.classList.remove('discountOn');
     }
-    contentDiscounts[numb].classList.add('active');
+    contentDiscounts[DisNumb].classList.add('discountOn');
 }

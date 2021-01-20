@@ -299,7 +299,7 @@ button:focus, button:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
     color: #8C8C88; }
-    .discount__tab-head__item.active {
+    .discount__tab-head__item.discountOn {
       color: #282828; }
     .discount__tab-head__item:hover {
       cursor: pointer; }
@@ -310,15 +310,23 @@ button:focus, button:active {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .discount__tab-content__item img {
-      width: 274px; }
-    .discount__tab-content__item.active {
-      -webkit-transition: all 2s;
-      transition: all 2s;
-      opacity: 1;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      position: static; }
+            justify-content: space-between;
+    position: relative; }
+    .discount__tab-content__item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px); }
+      .discount__tab-content__item img {
+        width: 274px; }
+      .discount__tab-content__item.discountOn {
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        position: static; }
 
 /*# sourceMappingURL=style.css.map */

@@ -248,7 +248,7 @@ button:focus, button:active
         justify-content: space-between
         color: #8C8C88
         &__item
-            &.active
+            &.discountOn
                 color: #282828
             &:hover
                 cursor: pointer
@@ -256,11 +256,16 @@ button:focus, button:active
         max-width: 1140px
         display: flex
         justify-content: space-between
+        position: relative
         &__item
-
+            position: absolute
+            left: 0
+            top: 0
+            opacity: 0
+            transform: translateX(100px)
             & img 
                 width: 274px
-            &.active
+            &.discountOn
                 transition: all 2s
                 opacity: 1
                 transform: translateX(0)
