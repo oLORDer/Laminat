@@ -1,10 +1,11 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Exo 2"; }
 
 h1, h2, h3 {
-  font-family: "Gabriela regular";
-  margin: 0; }
+  margin: 0;
+  font-weight: 500; }
 
 hr {
   border: solid 1px #503414;
@@ -47,10 +48,37 @@ button:focus, button:active {
 .color-gold {
   color: #FFA648; }
 
+.position-relative {
+  position: relative; }
+
 .header {
   height: 126px;
   margin-top: 44px;
   padding-top: 32px; }
+  .header__contacts {
+    width: 445px;
+    height: 30px;
+    background-color: #B9AEA1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: -76px;
+    padding: 5px 5px 5px 30px;
+    color: #ffffff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+    .header__contacts img {
+      position: absolute;
+      max-width: 17px;
+      max-height: 17px;
+      display: block;
+      left: -20px;
+      top: 2px; }
   .header__container {
     max-width: 1140px;
     margin: 0 auto;
@@ -66,7 +94,8 @@ button:focus, button:active {
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative; }
   .header__owner {
     position: relative; }
     .header__owner h1 {
@@ -119,12 +148,13 @@ button:focus, button:active {
     height: 100%; }
     .start__descr h2 {
       font-size: 30px;
-      font-weight: 400;
       margin-top: 80px; }
     .start__descr hr {
       margin-bottom: 40px; }
     .start__descr p {
-      font-size: 20px; }
+      font-size: 20px;
+      font-family: "Mplus 1p";
+      font-size: 24px; }
   .start__img {
     width: 666px;
     margin-top: 10px; }
@@ -163,6 +193,9 @@ button:focus, button:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .advantages__div-descr {
+      font-family: "Mplus 1p";
+      font-size: 22px; }
   .advantages-icon {
     max-height: 55px;
     max-width: 86px; }

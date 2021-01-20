@@ -1,8 +1,9 @@
 *
     box-sizing: border-box
+    font-family: 'Exo 2'
 h1, h2, h3
-    font-family: 'Gabriela regular'
     margin: 0
+    font-weight: 500
 hr 
         border: solid 1px #503414
         margin: 15px 0 0 0
@@ -43,11 +44,33 @@ button:focus, button:active
 
 .color-gold
     color: #FFA648
+.position-relative
+    position: relative
     
 .header
     height: 126px
     margin-top: 44px
     padding-top: 32px
+    &__contacts
+        width: 445px
+        height: 30px
+        background-color: #B9AEA1
+        display: flex
+        justify-content: space-between
+        position: absolute
+        right: 0
+        top: -76px
+        padding: 5px 5px 5px 30px
+        color: #ffffff
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+        & img 
+            position: absolute
+            max-width: 17px
+            max-height: 17px
+            display: block
+            left: -20px
+            top: 2px
     &__container
         max-width: 1140px
         margin: 0 auto
@@ -55,6 +78,7 @@ button:focus, button:active
         flex-direction: row
         align-items: center
         justify-content: space-between
+        position: relative
     &__owner
         position: relative
         & h1 
@@ -99,12 +123,13 @@ button:focus, button:active
         height: 100%
         & h2 
             font-size: 30px
-            font-weight: 400
             margin-top: 80px
         & hr 
             margin-bottom: 40px
         & p 
             font-size: 20px
+            font-family: 'Mplus 1p'
+            font-size: 24px
     &__img
         width: 666px
         margin-top: 10px
@@ -132,6 +157,9 @@ button:focus, button:active
         justify-content: space-between
         font-size: 22px
         align-items: center
+        &-descr
+            font-family: 'Mplus 1p'
+            font-size: 22px
     &-icon
         max-height: 55px
         max-width: 86px

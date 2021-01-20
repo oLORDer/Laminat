@@ -43,13 +43,3 @@
 	font-weight: bold;
 	font-style: italic;
 }
-
-@font-face {
-	font-family: 'Gabriela Regular';
-	src: url('Gabriela-Regular.eot');
-	src: url('Gabriela-Regular.eot?#iefix') format('embedded-opentype'),
-		url('Gabriela-Regular.woff') format('woff'),
-		url('Gabriela-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
