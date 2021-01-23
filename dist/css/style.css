@@ -51,6 +51,9 @@ button:focus, button:active {
 .position-relative {
   position: relative; }
 
+.mt-15px {
+  margin-top: 15px; }
+
 .header {
   height: 126px;
   margin-top: 44px;
@@ -328,5 +331,71 @@ button:focus, button:active {
         -webkit-transform: translateX(0);
                 transform: translateX(0);
         position: static; }
+
+.brands {
+  max-width: 1140px;
+  height: 152px;
+  margin: 64px auto 0 auto; }
+  .brands__title {
+    font-size: 24px; }
+  .brands hr {
+    width: 380px; }
+  .brands__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 52px; }
+    .brands__list-img {
+      width: 198px;
+      height: 132px; }
+
+.reviews {
+  max-width: 1140px;
+  margin: 70px auto 0 auto; }
+  .reviews__title {
+    font-size: 24px; }
+  .reviews hr {
+    width: 300px; }
+  .reviews__coments {
+    width: 940px;
+    height: 575px;
+    margin: 40px auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .reviews__coments img {
+      display: block;
+      width: 300px;
+      height: 555px; }
+
+.order {
+  max-width: 1140px;
+  margin: 77px auto 0 auto; }
+  .order__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .order__info-time {
+      font-size: 30px;
+      font-weight: 500; }
+    .order__info-number {
+      font-size: 30px;
+      font-weight: 600; }
+    .order__info-icon {
+      width: 47px;
+      height: 47px; }
+      .order__info-icon img {
+        display: block;
+        width: 47px;
+        height: 47px; }
 
 /*# sourceMappingURL=style.css.map */
