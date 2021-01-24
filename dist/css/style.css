@@ -7,9 +7,11 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 500; }
 
-hr {
-  border: solid 1px #503414;
-  margin: 15px 0 0 0; }
+h2:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #503414;
+  margin-top: 15px; }
 
 .mainbtn {
   width: 160px;
@@ -51,11 +53,20 @@ button:focus, button:active {
 .position-relative {
   position: relative; }
 
-.mt-15px {
-  margin-top: 15px; }
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.discountItem {
+  position: absolute;
+  display: block;
+  top: -3px;
+  right: 0;
+  width: 58px;
+  height: 56px;
+  background-image: url(../icons/diss.svg); }
 
 .header {
-  height: 126px;
   margin-top: 44px;
   padding-top: 32px; }
   .header__contacts {
@@ -75,6 +86,9 @@ button:focus, button:active {
     color: #ffffff;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px; }
+    .header__contacts a {
+      text-decoration: none;
+      color: #fff; }
     .header__contacts img {
       position: absolute;
       max-width: 17px;
@@ -130,34 +144,28 @@ button:focus, button:active {
             justify-content: space-between; }
     .header__nav a {
       text-decoration: none;
+      padding-bottom: 7px;
       color: #424242;
-      font-size: 18px; }
+      font-size: 18px;
+      border-bottom: 2px solid #ffffff; }
       .header__nav a:hover {
-        border-bottom: 2px solid #412A0F;
-        height: 30px; }
+        border-color: #503414; }
 
 .start {
-  width: 1140px;
-  height: 426px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .start__descr {
-    width: 390px;
-    height: 100%; }
-    .start__descr h2 {
-      font-size: 30px;
-      margin-top: 80px; }
-    .start__descr hr {
-      margin-bottom: 40px; }
-    .start__descr p {
-      font-size: 20px;
-      font-family: "Mplus 1p";
-      font-size: 24px; }
+          justify-content: space-between;
+  margin-top: 40px; }
+  .start__descr h2 {
+    font-size: 30px;
+    margin-top: 80px; }
+  .start__descr p {
+    font-size: 20px;
+    font-family: "Mplus 1p";
+    font-size: 24px; }
   .start__img {
     width: 666px;
     margin-top: 10px; }
@@ -166,14 +174,11 @@ button:focus, button:active {
       width: 100%; }
 
 .advantages {
-  max-width: 1140px;
-  height: 200px;
-  margin: 48px auto 0 auto; }
-  .advantages__hr {
-    width: 160px; }
+  margin-top: 48px; }
   .advantages__title {
     font-size: 30px;
-    font-weight: 400; }
+    font-weight: 400;
+    width: 150px; }
   .advantages__info {
     height: 65px;
     margin: 63px auto 0 auto;
@@ -208,13 +213,9 @@ button:focus, button:active {
       max-width: 100%; }
 
 .catalog {
-  max-width: 1140px;
-  margin: 90px auto 0 auto; }
+  margin-top: 90px; }
   .catalog__title {
-    width: 1140px;
-    margin: 0 auto; }
-    .catalog__title hr {
-      width: 120px; }
+    width: 110px; }
   .catalog__tab-head {
     width: 1140px;
     margin: 28px auto 16px auto;
@@ -233,7 +234,7 @@ button:focus, button:active {
         cursor: pointer; }
   .catalog__tab-content {
     position: relative;
-    width: 1140px; }
+    height: 650px; }
     .catalog__tab-content__item {
       position: absolute;
       left: 0;
@@ -255,43 +256,41 @@ button:focus, button:active {
 .grid__laminat {
   display: grid;
   grid-template-columns: 28% 28% 39%;
-  grid-template-rows: 38% 16% 16% 16%;
   grid-gap: 27px;
   grid-template-areas: "gl-1 gl-2 gl-3" "gl-4 gl-5 gl-3" "gl-4 gl-6 gl-3" "gl-4 gl-7 gl-3"; }
+  .grid__laminat img {
+    width: 100%;
+    height: 100%;
+    position: relative; }
 
-.gl-1 {
+#gl-1 {
   grid-area: gl-1; }
 
-.gl-2 {
+#gl-2 {
   grid-area: gl-2; }
 
-.gl-3 {
-  grid-area: gl-3; }
-
-#gl-33 {
+#gl-3 {
+  grid-area: gl-3;
   width: 100%;
   height: 100%; }
 
-.gl-4 {
+#gl-4 {
   grid-area: gl-4; }
 
-.gl-5 {
+#gl-5 {
   grid-area: gl-5; }
 
-.gl-6 {
+#gl-6 {
   grid-area: gl-6; }
 
-.gl-7 {
+#gl-7 {
   grid-area: gl-7; }
 
 .discount {
-  max-width: 1140px;
-  height: 435px;
-  margin: 64px auto 0 auto; }
+  margin-top: 64px; }
   .discount__title {
-    font-size: 24px; }
-  .discount hr {
-    width: 305px; }
+    font-size: 24px;
+    width: 370px; }
   .discount__tab-head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,13 +332,10 @@ button:focus, button:active {
         position: static; }
 
 .brands {
-  max-width: 1140px;
-  height: 152px;
-  margin: 64px auto 0 auto; }
+  margin-top: 64px; }
   .brands__title {
-    font-size: 24px; }
-  .brands hr {
-    width: 380px; }
+    font-size: 24px;
+    width: 510px; }
   .brands__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -349,15 +345,17 @@ button:focus, button:active {
             justify-content: space-between;
     margin-top: 52px; }
     .brands__list-img {
-      width: 198px;
-      height: 132px; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
 
 .reviews {
-  max-width: 1140px;
-  margin: 70px auto 0 auto; }
+  margin-top: 70px; }
   .reviews__title {
-    font-size: 24px; }
-  .reviews hr {
+    font-size: 24px;
     width: 300px; }
   .reviews__coments {
     width: 940px;
@@ -375,8 +373,7 @@ button:focus, button:active {
       height: 555px; }
 
 .order {
-  max-width: 1140px;
-  margin: 77px auto 0 auto; }
+  margin-top: 77px; }
   .order__info {
     display: -webkit-box;
     display: -ms-flexbox;
