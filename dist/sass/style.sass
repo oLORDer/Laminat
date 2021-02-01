@@ -278,24 +278,26 @@ button:focus, button:active
             font-size: 59px
             letter-spacing: 0.07em
     &__content 
+        height: 370px
         display: flex
         justify-content: space-between
         &-item
             width: 309px
-            height: 300px
+            height: 345px
             margin-top: 58px
             & img 
                 display: block
                 width: 100%
                 max-height: 245px
             &-descr
-                padding: 10px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 100px
+                padding: 9px
                 font-size: 17px
                 border: 1px solid grey
                 background-color: $main-color
-            &-price
-                padding-top: 4px
-    
 
 .catalog-hiden
     display: none
@@ -312,9 +314,6 @@ button:focus, button:active
     text-decoration: line-through
     color: $gold
     padding-left: 25px
-    &:hover
-        color: #F9B247
-        cursor: pointer
 
 .discount
     margin-top: 125px
@@ -411,6 +410,9 @@ button:focus, button:active
         margin-top: 32px
     & hr 
         margin-top: 32px
+    &__map
+        width: 1320px
+        height: 652px
 
 
 footer
