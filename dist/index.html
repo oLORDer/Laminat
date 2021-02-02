@@ -43,7 +43,7 @@
                 <p>Бренди визнані Європою</p>
                 <p>Якісне обслуговування клієнтів</p>
                 <div class="btn btn-header">
-                    <button>Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
+                    <button data-modal="call">Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
         </div>
 
 
-        <div class="catalog__content ">
+        <div class="catalog__content display-none" id="catalog-hiden1">
             <div class="catalog__content-item">
                 <img src="img/catalog-9.png" alt="#">
                 <div class="catalog__content-item-descr"> <div>My Floor MV 849</div> <div>350 ₴/м2</div></div>
@@ -134,7 +134,7 @@
         </div>
 
         
-        <div class="catalog__content ">
+        <div class="catalog__content display-none" id="catalog-hiden2">
             <div class="catalog__content-item">
                 <img src="img/catalog-13.png" alt="#">
                 <div class="catalog__content-item-descr"> <div>Egger Дуб Елтон білий EPL 137</div> <div>250 ₴/м2</div></div>
@@ -147,17 +147,14 @@
                 <img src="img/catalog-15.png" alt="#">
                 <div class="catalog__content-item-descr"> <div>Egger Дуб азгіл білий  ELP 153</div> <div>300 ₴/м2</div></div>
             </div>
-            <div class="catalog__content-item">
-                <img src="img/l-1.png" alt="#">
-                <div class="catalog__content-item-descr">My Floor Villa M 1204 Harbour Oak Grey <div>778₴/м2</div></div>
+            <div class="catalog__content-item catalog__content-item-last">
+                <div class="catalog__content-item-last-title">Весь асортимент за адресою</div>
+                <div class="catalog__content-item-last-descr"> <div id="catalog-last"><img src="icons/marker.svg" alt="#"></div> калинівський ринок <br> сектор 1 контейнер 664 <br> 665</div>
             </div>
         </div>
 
         <div class="catalog-more" id="catalogMore">Показати ще...</div>
-
-        <div id="test">catalog-hiden</div>
         
-   
     </main>
 
     <section class="discount">
@@ -219,7 +216,7 @@
                     <div class="order__container-cont-icon"><a href="#" class="viber"><img src="icons/viber.svg" alt="#"></a></div>
                     <div class="order__container-cont-icon"><a href="#" class="instagram"><img src="icons/instagram.svg" alt="#"></a></div>
                     <div class="btn">
-                        <button>Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
+                        <button data-modal="call">Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
                     </div>
                 </div>
             </div>
@@ -255,7 +252,7 @@
                 <p>з 08:00 до 21:00 без вихідних</p>
                 <div class="container__right-btnAndNumb">
                     <div class="btn btn-footer">
-                        <button>Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
+                        <button data-modal="call">Швидка консультація <img src="icons/btnPhone.svg" alt="phone"></button>
                     </div>
                     <div class="container__right-number"> &nbsp 050 915 2254 <br> 096 053 0420</div>
                 </div>
@@ -268,7 +265,24 @@
         </div>
     </footer>
 
+    <div class="overlay" id="modal">
+        <div class="overlay__div">
+            <div class="modal">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Ми передзвонимо</div>
 
+                    <form action="#" class="feed-form">
+                        <input name="name" type="text" required placeholder="Як до вас звертатись?">
+                        <input name="phone" type="tel" value="+380">
+    
+                        <div class="btn btn-form">
+                            <button>Підтвердити<img src="icons/phone-form.svg" alt="phone"></button>
+                        </div>
+                    </form>
+                <div class="modal__descr">не використовуєм ваші данні для надання реклами</div>
+            </div>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
