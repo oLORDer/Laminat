@@ -43,8 +43,8 @@ button:focus, button:active
 
 .btn
     border: solid 3px $gold
-    width: 270px
-    height: 60px
+    width: 309px
+    height: 68px
     &:hover
         border-color: #F9B247
     & button 
@@ -57,6 +57,7 @@ button:focus, button:active
         align-items: center
         font-weight: 500
         font-size: 18px
+        color: #777777
         &:hover
             cursor: pointer
     &-footer button
@@ -89,8 +90,6 @@ button:focus, button:active
 
 .color-gold
     color: #FDBA56
-    &:hover
-        color: #F9B247
 .color-grey
     color: #808080
 
@@ -199,6 +198,7 @@ button:focus, button:active
         display: flex
         justify-content: space-between
         & a 
+            width: fit-content            
             padding-bottom: 7px
             color: #424242
             font-size: 18px
@@ -529,6 +529,8 @@ footer
         color: #BEBEBE
         font-size: 25px
         border-bottom: solid 1px #ffffff
+        &:focus
+            color: #ffffff
     &__subtitle
         font-size: 48px
         color: #ffffff
@@ -551,3 +553,9 @@ footer
             font-size: 70px
             top: 55px
             right: 110px
+
+
+
+
+        flex-wrap: wrap
+        align-content: space-between     

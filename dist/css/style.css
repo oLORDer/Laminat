@@ -37,8 +37,8 @@ button:focus, button:active {
 
 .btn {
   border: solid 3px #FFCA0F;
-  width: 270px;
-  height: 60px; }
+  width: 309px;
+  height: 68px; }
   .btn:hover {
     border-color: #F9B247; }
   .btn button {
@@ -55,7 +55,8 @@ button:focus, button:active {
         -ms-flex-align: center;
             align-items: center;
     font-weight: 500;
-    font-size: 18px; }
+    font-size: 18px;
+    color: #777777; }
     .btn button:hover {
       cursor: pointer; }
   .btn-footer button {
@@ -91,8 +92,6 @@ button:focus, button:active {
 
 .color-gold {
   color: #FDBA56; }
-  .color-gold:hover {
-    color: #F9B247; }
 
 .color-grey {
   color: #808080; }
@@ -222,6 +221,9 @@ button:focus, button:active {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .header__nav a {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
       padding-bottom: 7px;
       color: #424242;
       font-size: 18px;
@@ -642,6 +644,8 @@ footer {
     color: #BEBEBE;
     font-size: 25px;
     border-bottom: solid 1px #ffffff; }
+    .modal input:focus {
+      color: #ffffff; }
   .modal__subtitle {
     font-size: 48px;
     color: #ffffff;
@@ -658,7 +662,11 @@ footer {
     top: 70px;
     right: 115px;
     font-size: 50px;
-    cursor: pointer; }
+    cursor: pointer;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
     .modal__close:hover {
       cursor: pointer;
       font-size: 70px;
