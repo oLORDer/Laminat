@@ -28,7 +28,7 @@ $main-color: #FFFAF5
 
 .anchor
     position: absolute
-    top: -170px
+    top: -90px
 
 .mr-15px
     margin-right: 35px
@@ -69,6 +69,8 @@ button:focus, button:active
         height: 31px
     &-header
         margin-top: 80px
+        &-second
+            display: none
     &-form
         width: 274px
         height: 64px
@@ -121,8 +123,8 @@ button:focus, button:active
     position: fixed
     display: block
     width: 100%
-    height: 105px
-    padding-top: 75px
+    height: 80px
+    padding-top: 50px
     background-color: $main-color
     z-index: 100
     &__contacts
@@ -135,12 +137,11 @@ button:focus, button:active
         align-items: center
         position: absolute
         right: 0
-        top: -76px
+        top: -50px
         padding: 5px 5px 5px 30px
         color: #ffffff
         border-bottom-left-radius: 3px
         border-bottom-right-radius: 3px
-
         & img 
             position: absolute
             max-width: 17px
@@ -208,19 +209,19 @@ button:focus, button:active
 .start
     display: flex
     justify-content: space-between
-    padding-top: 160px
+    padding-top: 120px
     position: relative
     &__descr
         width: 464px
         & h1 
             display: block
             position: absolute
-            font-size: 66px
+            font-size: 59px
             margin-top: 30px
             letter-spacing: 0.07em
         &-list 
-            margin-top: 270px
-            font-size: 25px
+            margin-top: 200px
+            font-size: 20px
             & p 
                 padding-left: 33px
                 position: relative
@@ -236,14 +237,15 @@ button:focus, button:active
     &__img
         width: 826px
         margin-top: 10px
+        padding-left: 85px
         & img
-            height: 1086
-            width: 715
+            height: 677px
 
 .goto
     width: 253px
     height: 45px
-    margin: 64px auto 0 auto
+    position: absolute
+    top: 680px
     cursor: pointer
     background-color: #FFF0C7
     padding: 13px 18px 10px 18px
@@ -294,6 +296,7 @@ button:focus, button:active
             width: 309px
             height: 345px
             margin-top: 58px
+            margin-right: 28px
             & img 
                 display: block
                 width: 100%
@@ -327,7 +330,7 @@ button:focus, button:active
 .catalog-more
     width: 166px
     height: 45px
-    margin: 140px auto 0 auto
+    margin: 50px auto 0 auto
     padding: 13px 12px 10px 16px
     cursor: pointer
     background-color: #FFF0C7
@@ -340,7 +343,7 @@ button:focus, button:active
     padding-left: 25px
 
 .discount
-    margin-top: 125px
+    margin-top: 80px
     &__title h2
         font-size: 48px
     &__flex
@@ -349,10 +352,9 @@ button:focus, button:active
         justify-content: space-between
         &__div
             height: 330px
-            width: 309px
+            margin-right: 20px
             &-img 
-                width: 309px
-                height: 245px
+                width: 100%
                 & img 
                     display: block
                     width: 100%
@@ -374,7 +376,7 @@ button:focus, button:active
 
 
 .brands
-    margin-top: 128px
+    margin-top: 80px
     &__title
         width: 510px
         & h2 
@@ -388,7 +390,7 @@ button:focus, button:active
             align-items: center
 
 .reviews
-    margin-top: 145px
+    margin-top: 90px
     &__title
         width: 300px
         & h2 
@@ -401,7 +403,7 @@ button:focus, button:active
         & img 
             display: block
             width: 300px
-            height: 555px
+            margin-right: 20px
 
 .order
     margin-top: 96px
@@ -554,8 +556,125 @@ footer
             top: 55px
             right: 110px
 
+    
+
+@media screen and ( max-width: 1280px )
+    .header
+        max-width: 100%
+        &__container
+            max-width: 1216px
+            padding-right: 30px
+        &__contacts
+            top: -50px
+            right: 30px
+        &__nav 
+            width: 712px
+    .container
+        max-width: 1216px
+        margin: 0 auto
+    .start 
+        padding-top: 80px
+        &__img img 
+            height: 509px
+        &__descr
+            & h1 
+                font-size: 58px
+                margin-top: 15px
+    .catalog
+        &__content
+    .goto
+        top: 650px
+        left: 50%
+        transform: translateX(-50%)
+    .order__map
+        max-width: 100%
+
+
+@media screen and ( max-width: 768px )
+    h2 
+        font-size: 48px
+    .header
+        &__container
+            max-width: 728px
+            margin: 0
+            padding: 0 20px 
+        &__nav
+            width: 70%
+        &__contacts
+            right: 20px
+    .container
+        padding: 0 20px
+    .start
+        flex-direction: column
+        &__descr
+            width: 100%
+            & h1 
+                font-size: 48px
+            &-list
+                margin-top: 146px
+        &__img
+            padding: 0
+            & img
+                max-width: 728px
+    .btn-header
+        display: none
+        &-second
+            display: block
+            margin-top: 30px
+    .goto
+        display: none
+    .whyme
+        margin-top: 64px
+        &__flex
+            flex-wrap: wrap
+            align-content: space-between
+            justify-content: center
+            &__div
+                width: 360px
+                margin-top: 40px
+                &-descr
+                    font-size: 22px
+    .catalog
+        &__title
+            margin-bottom: 32px
+        &__content
+            flex-wrap: wrap
+            height: auto
+            &-item
+                width: 345px
+                margin-right: 18px
+                margin-top: 18px
+    .discount
+        &__flex
+            margin-top: 30px
+            flex-wrap: wrap
+            &__div
+                margin-right: 18px
+                margin-bottom: 45px
+                width: 345px
+    .brands
+        &__list
+            width: 100%
+            &-img
+                width: 150px
+                & img 
+                    width: 100%
+    .reviews
+        &__coments
+            margin-top: 32px
+            & img:nth-child(3)
+                display: none
+            & img:nth-child(4)
+                display: none
+            & img 
+                width: 100%
+    .order
+        &__title h2
+            font-size: 40px
+        &__container
+            flex-direction: column
+                
 
 
 
-        flex-wrap: wrap
-        align-content: space-between     
+@media screen and ( max-width: 320px )
