@@ -525,6 +525,8 @@ button:focus, button:active {
   .order__map {
     width: 1320px;
     height: 652px; }
+  .order-btn-second {
+    display: none; }
 
 footer {
   max-width: 100%;
@@ -603,7 +605,7 @@ footer {
           width: 48px;
           height: 48px; }
         footer .container__right-social .imail {
-          color: #DD8E19; }
+          color: #FFCA0F; }
       footer .container__right-btnAndNumb {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -612,6 +614,12 @@ footer {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         width: 648px; }
+
+.footer-paragraph-second {
+  display: none; }
+
+.footer-worktime-second {
+  display: none; }
 
 .overlay {
   display: none;
@@ -715,7 +723,7 @@ footer {
   .header__nav {
     width: 70%; }
   .header__contacts {
-    right: 20px; }
+    display: none; }
 
   .container {
     padding: 0 20px; }
@@ -801,8 +809,53 @@ footer {
     font-size: 40px; }
   .order__container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .order__container-cont {
+      width: 120px;
+      margin-top: 30px; }
+
+  .order-btn {
+    display: none; }
+    .order-btn-second {
+      display: block;
+      margin-top: 30px; }
+
+  footer {
+    margin-top: 67px; }
+    footer .container {
+      padding: 13px 20px; }
+      footer .container__right {
+        width: 543px; }
+        footer .container__right p {
+          padding: 0;
+          padding-bottom: 14px; }
+        footer .container__right-btnAndNumb {
+          width: 543px;
+          margin-bottom: 14px; }
+        footer .container__right-social {
+          margin: 0; }
+    footer nav {
+      height: 260px; }
+      footer nav a {
+        margin-bottom: 17px; }
+        footer nav a:last-child {
+          margin-bottom: 0; }
+
+  .footer-paragraph {
+    display: none; }
+    .footer-paragraph-second {
+      display: block;
+      padding: 0 20px 14px 20px;
+      margin: 10px 0 0 0;
+      color: #fff; }
+
+  .footer-worktime {
+    display: none; }
+
+  .footer-worktime-second {
+    display: block;
+    text-align: end; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -438,6 +438,8 @@ button:focus, button:active
     &__map
         width: 1320px
         height: 652px
+    &-btn-second
+        display: none
 
 
 footer
@@ -493,11 +495,15 @@ footer
                     width: 48px
                     height: 48px
                 & .imail
-                    color: #DD8E19
+                    color: #FFCA0F
             &-btnAndNumb
                 display: flex
                 justify-content: space-between
                 width: 648px
+.footer-paragraph-second
+    display: none
+.footer-worktime-second
+    display: none
 
 .overlay 
     display: none
@@ -601,7 +607,7 @@ footer
         &__nav
             width: 70%
         &__contacts
-            right: 20px
+            display: none
     .container
         padding: 0 20px
     .start
@@ -672,9 +678,47 @@ footer
         &__title h2
             font-size: 40px
         &__container
-            flex-direction: column
-                
+            flex-direction: column-reverse
+            &-cont
+                width: 120px
+                margin-top: 30px
 
-
+    .order-btn
+        display: none
+        &-second
+            display: block
+            margin-top: 30px
+    footer
+        margin-top: 67px
+        & .container
+            padding: 13px 20px
+            &__right
+                width: 543px
+                & p 
+                    padding: 0
+                    padding-bottom: 14px
+                &-btnAndNumb
+                    width: 543px
+                    margin-bottom: 14px
+                &-social
+                    margin: 0
+        & nav 
+            height: 260px
+            & a 
+                margin-bottom: 17px
+                &:last-child
+                    margin-bottom: 0
+    .footer-paragraph
+        display: none
+        &-second
+            display: block
+            padding: 0 20px 14px 20px
+            margin: 10px 0 0 0
+            color: #fff
+    .footer-worktime
+        display: none
+    .footer-worktime-second
+        display: block
+        text-align: end
 
 @media screen and ( max-width: 320px )
