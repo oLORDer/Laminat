@@ -170,6 +170,7 @@ button:focus, button:active
             position: absolute
             top: -20px
             left: 50px
+            font-family: 'Comfortaa'
         & h1 
             margin-left: 52px
             font-family: 'Comfortaa'
@@ -396,7 +397,6 @@ button:focus, button:active
         & h2 
             font-size: 48px
     &__coments
-        min-height: 575px
         margin: 70px auto 0 auto
         display: flex
         justify-content: space-between
@@ -592,6 +592,10 @@ footer
         top: 650px
         left: 50%
         transform: translateX(-50%)
+    .reviews
+        &__coments
+            & img 
+                width: 23%
     .order__map
         max-width: 100%
 
@@ -600,6 +604,7 @@ footer
     h2 
         font-size: 48px
     .header
+        max-width: 768px
         &__container
             max-width: 728px
             margin: 0
@@ -721,4 +726,148 @@ footer
         display: block
         text-align: end
 
-@media screen and ( max-width: 320px )
+    .overlay
+        width: 100%
+        &__div
+            width: 720px
+            height: 612px
+            padding: 67px 115px
+            left: 50%
+            transform: translateX(-50%)
+            top: 120px
+    .modal
+        width: 100%
+        height: 100%
+        &__close 
+            right: 130px
+            &:hover
+                right: 130px
+        &__subtitle 
+            font-size: 25px
+        &__descr
+            margin-top: 20px
+
+@media screen and ( max-width: 425px )
+    h2 
+        font-size: 32px
+    .phoneDNone
+        display: none
+    .header
+        padding-top: 55px
+        &__container
+        &__nav 
+            display: none
+        &__owner
+            &-text
+                font-size: 25px
+                margin-left: 60px
+            &-name
+                font-size: 23px
+                top: -24px
+                left: 68px
+            &::after
+                width: 32px
+                height: 35px
+                top: -37px
+                left: 37px
+            &::before
+                width: 50px 
+                height: 66px 
+                top: -43px 
+                left: 0px
+
+    .start 
+        padding-top: 90px
+        &__descr
+            & h1 
+                font-size: 25px 
+            &-list 
+                margin-top: 105px
+        &__img 
+            position: relative
+            height: 280px
+            & img 
+                position: absolute
+                left: -20px
+                width: 425px
+                height: 100%
+    .btn-header-second
+        width: 385px
+        height: 76px
+        margin-top: 45px
+    .whyme
+        &__flex
+            margin-top: 0
+            &__div-descr
+                font-size: 20px
+    .catalog
+        margin-top: 50px
+    .discount
+        &__p
+            font-size: 20px
+            margin: 0
+    .brands
+        margin-top: 40px
+        &__list
+            flex-direction: column
+            align-items: center
+            &-img
+                width: 240px
+                padding-top: 50px
+                &:first-child
+                    padding-top: 10px
+    .reviews 
+        margin-top: 50px
+        &__coments
+            & img 
+                width: 47%
+                height: 318px
+    .order-btn-second
+        width: 100%
+    .order 
+        &__map 
+            height: 300px
+    footer 
+        & .container
+            display: block
+            &__left 
+                width: 100%
+            &__right 
+                width: 100%
+                display: block
+                & p 
+                    padding-top: 10px
+                    text-align: start
+                    font-size: 20px
+                &-btnAndNumb
+                    flex-direction: column-reverse
+                    align-items: start
+                    width: 100%
+                    padding-right: 20px
+    .btn-footer
+        width: 100%
+        margin-top: 20px
+        margin-bottom: 20px
+    .footer-paragraph-second
+        margin-top: 44px
+    .overlay
+        &__div 
+            height: 403px
+            width: 320px
+            left: 25%
+            top: 35%
+            padding: 0
+    .modal
+        border: none
+        padding: 40px 25px
+        &__subtitle 
+            font-size: 24px
+            margin-bottom: 45px
+        &__close 
+            right: 7px 
+            top: -8px
+            &:hover 
+                top: -8px
+                right: 7px
+    .btn-form 
+        margin-top: 60px

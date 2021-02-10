@@ -189,7 +189,8 @@ button:focus, button:active {
       letter-spacing: 2px;
       position: absolute;
       top: -20px;
-      left: 50px; }
+      left: 50px;
+      font-family: "Comfortaa"; }
     .header__owner h1 {
       margin-left: 52px;
       font-family: "Comfortaa";
@@ -466,7 +467,6 @@ button:focus, button:active {
     .reviews__title h2 {
       font-size: 48px; }
   .reviews__coments {
-    min-height: 575px;
     margin: 70px auto 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -710,20 +710,25 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
+  .reviews__coments img {
+    width: 23%; }
+
   .order__map {
     max-width: 100%; } }
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 48px; }
 
-  .header__container {
-    max-width: 728px;
-    margin: 0;
-    padding: 0 20px; }
-  .header__nav {
-    width: 70%; }
-  .header__contacts {
-    display: none; }
+  .header {
+    max-width: 768px; }
+    .header__container {
+      max-width: 728px;
+      margin: 0;
+      padding: 0 20px; }
+    .header__nav {
+      width: 70%; }
+    .header__contacts {
+      display: none; }
 
   .container {
     padding: 0 20px; }
@@ -856,6 +861,170 @@ footer {
 
   .footer-worktime-second {
     display: block;
-    text-align: end; } }
+    text-align: end; }
+
+  .overlay {
+    width: 100%; }
+    .overlay__div {
+      width: 720px;
+      height: 612px;
+      padding: 67px 115px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 120px; }
+
+  .modal {
+    width: 100%;
+    height: 100%; }
+    .modal__close {
+      right: 130px; }
+      .modal__close:hover {
+        right: 130px; }
+    .modal__subtitle {
+      font-size: 25px; }
+    .modal__descr {
+      margin-top: 20px; } }
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 32px; }
+
+  .phoneDNone {
+    display: none; }
+
+  .header {
+    padding-top: 55px; }
+    .header__nav {
+      display: none; }
+    .header__owner-text {
+      font-size: 25px;
+      margin-left: 60px; }
+    .header__owner-name {
+      font-size: 23px;
+      top: -24px;
+      left: 68px; }
+    .header__owner::after {
+      width: 32px;
+      height: 35px;
+      top: -37px;
+      left: 37px; }
+    .header__owner::before {
+      width: 50px;
+      height: 66px;
+      top: -43px;
+      left: 0px; }
+
+  .start {
+    padding-top: 90px; }
+    .start__descr h1 {
+      font-size: 25px; }
+    .start__descr-list {
+      margin-top: 105px; }
+    .start__img {
+      position: relative;
+      height: 280px; }
+      .start__img img {
+        position: absolute;
+        left: -20px;
+        width: 425px;
+        height: 100%; }
+
+  .btn-header-second {
+    width: 385px;
+    height: 76px;
+    margin-top: 45px; }
+
+  .whyme__flex {
+    margin-top: 0; }
+    .whyme__flex__div-descr {
+      font-size: 20px; }
+
+  .catalog {
+    margin-top: 50px; }
+
+  .discount__p {
+    font-size: 20px;
+    margin: 0; }
+
+  .brands {
+    margin-top: 40px; }
+    .brands__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .brands__list-img {
+        width: 240px;
+        padding-top: 50px; }
+        .brands__list-img:first-child {
+          padding-top: 10px; }
+
+  .reviews {
+    margin-top: 50px; }
+    .reviews__coments img {
+      width: 47%;
+      height: 318px; }
+
+  .order-btn-second {
+    width: 100%; }
+
+  .order__map {
+    height: 300px; }
+
+  footer .container {
+    display: block; }
+    footer .container__left {
+      width: 100%; }
+    footer .container__right {
+      width: 100%;
+      display: block; }
+      footer .container__right p {
+        padding-top: 10px;
+        text-align: start;
+        font-size: 20px; }
+      footer .container__right-btnAndNumb {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        width: 100%;
+        padding-right: 20px; }
+
+  .btn-footer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .footer-paragraph-second {
+    margin-top: 44px; }
+
+  .overlay__div {
+    height: 403px;
+    width: 320px;
+    left: 25%;
+    top: 35%;
+    padding: 0; }
+
+  .modal {
+    border: none;
+    padding: 40px 25px; }
+    .modal__subtitle {
+      font-size: 24px;
+      margin-bottom: 45px; }
+    .modal__close {
+      right: 7px;
+      top: -8px; }
+      .modal__close:hover {
+        top: -8px;
+        right: 7px; }
+
+  .btn-form {
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
