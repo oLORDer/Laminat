@@ -267,11 +267,13 @@ button:focus, button:active {
           left: 0;
           top: 15px; }
   .start__img {
-    width: 826px;
     margin-top: 10px;
-    padding-left: 85px; }
+    position: relative;
+    z-index: -1; }
     .start__img img {
-      height: 677px; }
+      position: absolute;
+      top: 0;
+      right: -290px; }
 
 .goto {
   width: 253px;
@@ -287,7 +289,7 @@ button:focus, button:active {
       color: #4A4A4A; }
 
 .whyme {
-  margin-top: 128px; }
+  margin-top: 273px; }
   .whyme__flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,15 +699,16 @@ footer {
     margin: 0 auto; }
 
   .start {
-    padding-top: 80px; }
+    padding-top: 100px; }
     .start__img img {
-      height: 509px; }
+      height: 514px;
+      right: -32px; }
     .start__descr h1 {
       font-size: 58px;
       margin-top: 15px; }
 
   .goto {
-    top: 650px;
+    top: 680px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
@@ -715,6 +718,21 @@ footer {
 
   .order__map {
     max-width: 100%; } }
+@media screen and (max-width: 1024px) {
+  .start {
+    padding-top: 115px; }
+    .start__descr {
+      width: 360px;
+      padding-left: 10px; }
+      .start__descr h1 {
+        font-size: 45px; }
+      .start__descr-list {
+        margin-top: 155px; }
+    .start__img img {
+      height: 455px; }
+
+  .btn-header {
+    margin-top: 44px; } }
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 48px; }
@@ -744,10 +762,8 @@ footer {
         font-size: 48px; }
       .start__descr-list {
         margin-top: 146px; }
-    .start__img {
-      padding: 0; }
-      .start__img img {
-        max-width: 728px; }
+    .start__img img {
+      position: relative; }
 
   .btn-header {
     display: none; }

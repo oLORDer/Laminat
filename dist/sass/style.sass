@@ -236,12 +236,13 @@ button:focus, button:active
                     left: 0
                     top: 15px
     &__img
-        width: 826px
         margin-top: 10px
-        padding-left: 85px
+        position: relative
+        z-index: -1
         & img
-            height: 677px
-
+            position: absolute
+            top: 0
+            right: -290px
 .goto
     width: 253px
     height: 45px
@@ -257,7 +258,7 @@ button:focus, button:active
 
 
 .whyme
-    margin-top: 128px
+    margin-top: 273px
     &__flex
         display: flex
         justify-content: space-between
@@ -579,9 +580,10 @@ footer
         max-width: 1216px
         margin: 0 auto
     .start 
-        padding-top: 80px
+        padding-top: 100px
         &__img img 
-            height: 509px
+            height: 514px
+            right: -32px
         &__descr
             & h1 
                 font-size: 58px
@@ -589,7 +591,7 @@ footer
     .catalog
         &__content
     .goto
-        top: 650px
+        top: 680px
         left: 50%
         transform: translateX(-50%)
     .reviews
@@ -598,6 +600,23 @@ footer
                 width: 23%
     .order__map
         max-width: 100%
+
+@media screen and ( max-width: 1024px )
+    .start
+        padding-top: 115px
+        &__descr
+            width: 360px
+            padding-left: 10px
+            & h1 
+                font-size: 45px
+            &-list
+                margin-top: 155px
+
+        &__img 
+            & img 
+                height: 455px
+    .btn-header
+        margin-top: 44px
 
 
 @media screen and ( max-width: 768px )
@@ -624,9 +643,8 @@ footer
             &-list
                 margin-top: 146px
         &__img
-            padding: 0
             & img
-                max-width: 728px
+                position: relative
     .btn-header
         display: none
         &-second
