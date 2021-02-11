@@ -640,7 +640,6 @@ footer {
   background: rgba(0, 0, 0, 0.5); }
   .overlay__div {
     width: 1000px;
-    min-height: 563px;
     background: #4A4A4A;
     padding: 48px 80px;
     position: absolute;
@@ -1088,8 +1087,6 @@ footer {
   .overlay__div {
     height: 403px;
     width: 320px;
-    left: 25%;
-    top: 35%;
     padding: 0; }
 
   .modal {
