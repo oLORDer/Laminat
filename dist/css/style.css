@@ -1244,9 +1244,16 @@ footer {
     margin-left: auto;
     margin-right: auto; } }
 @media screen and (max-width: 320px) {
+  .btn-header-second {
+    width: 280px;
+    height: 56px; }
+
   .start__descr h1 {
     font-size: 24px; }
   .start__img img {
-    width: 339px; } }
+    width: 339px; }
+
+  footer .container__right-social {
+    width: auto; } }
 
 /*# sourceMappingURL=style.css.map */
