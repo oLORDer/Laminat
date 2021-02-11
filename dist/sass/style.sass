@@ -99,6 +99,8 @@ button:focus, button:active
     position: relative
 .display-flex
     display: flex
+.hamburger-menu
+    display: none
 
 .container
     max-width: 1320px
@@ -947,3 +949,118 @@ footer
                 right: 7px
     .btn-form 
         margin-top: 60px
+
+
+    .hamburger-menu
+        display: block
+    #menu__toggle
+        opacity: 0
+    .menu__btn
+        display: flex
+        align-items: center
+        position: fixed
+        top: 20px
+        right: 20px
+        width: 35px
+        height: 26px
+        cursor: pointer
+        z-index: 1
+        & span
+            display: block
+            position: absolute
+            width: 100%
+            height: 2px
+            background-color: #4A4A4A
+            transition-duration: .25s
+            &::before
+                display: block
+                content: ''
+                position: absolute
+                top: -12px
+                width: 100%
+                height: 2px
+                transition-duration: .25s
+                background-color: #4A4A4A
+            &::after
+                display: block
+                content: ''
+                position: absolute
+                top: 12px
+                width: 100%
+                height: 2px
+                transition-duration: .25s
+                background-color: #4A4A4A
+    .menu__box
+        top: 0
+        margin: 0
+        right: -100%
+        width: 240px
+        height: 403px
+        display: block
+        position: fixed
+        padding: 10px
+        list-style: none
+        visibility: hidden
+        text-align: center
+        transition-duration: .25s
+        background-color: #4A4A4A
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
+    .menu__item
+        color: #fff
+        display: block
+        font-size: 17px
+        font-weight: 400
+        padding-top: 20px
+        text-decoration: none
+        transition-duration: .25s
+        text-align: left
+        &:hover
+            background-color: #CFD8DC
+    #menu__toggle:checked ~ .menu__btn > span 
+        transform: rotate(45deg)
+    #menu__toggle:checked ~ .menu__btn > span::before 
+        top: 0
+        transform: rotate(0)
+        background-color: #fff
+    #menu__toggle:checked ~ .menu__btn > span::after 
+        top: 0
+        transform: rotate(90deg)
+        background-color: #fff
+    #menu__toggle:checked ~ .menu__box 
+        visibility: visible
+        right: 0
+    .burger__address
+        display: flex
+        color: #BEBEBE
+        padding-top: 83px
+        flex-direction: column
+        font-family: Montserrat
+        align-items: flex-start
+        &-numb
+            padding-bottom: 10px
+            font-size: 17px
+        &-div 
+            font-size: 13px
+            text-align: left
+            line-height: 14px
+    .pt10px
+        padding-top: 10px
+    .color-white
+        color: #fff
+@media screen and ( max-width: 375px )
+    .start
+        &__img 
+            & img 
+                width: 375px
+    .btn-header-second
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+@media screen and ( max-width: 320px )
+    .start
+        &__descr
+            & h1 
+                font-size: 24px
+        &__img 
+            & img 
+                width: 339px
