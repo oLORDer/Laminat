@@ -101,6 +101,8 @@ button:focus, button:active
     display: flex
 .hamburger-menu
     display: none
+.start__img-second
+    display: none
 
 .container
     max-width: 1320px
@@ -264,7 +266,6 @@ button:focus, button:active
         justify-content: space-between
         margin-top: 70px
         &__div
-            width: 390px
             display: flex
             flex-direction: column
             align-items: center
@@ -684,15 +685,10 @@ footer
             &-list
                 margin-top: 146px
         &__img
-            position: relative
-            height: 514px
-            width: 100%
-            & img
-                display: block
-                position: absolute
-                width: 768px
-                right: -20px
-                top: 0
+            display: none
+    .start__img-second
+        display: block
+        width: 100vw
     .btn-header
         display: none
         &-second
@@ -1060,13 +1056,15 @@ footer
     .btn-header-second
         width: 280px
         height: 56px
+    header 
+        width: 100vw
     .start
         &__descr
             & h1 
                 font-size: 24px
         &__img 
             & img 
-                width: 339px
+                width: 320px
     footer 
         & .container 
             &__right 

@@ -109,6 +109,9 @@ button:focus, button:active {
 .hamburger-menu {
   display: none; }
 
+.start__img-second {
+  display: none; }
+
 .container {
   max-width: 1320px;
   margin: 0 auto; }
@@ -300,7 +303,6 @@ button:focus, button:active {
             justify-content: space-between;
     margin-top: 70px; }
     .whyme__flex__div {
-      width: 390px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -807,15 +809,11 @@ footer {
       .start__descr-list {
         margin-top: 146px; }
     .start__img {
-      position: relative;
-      height: 514px;
-      width: 100%; }
-      .start__img img {
-        display: block;
-        position: absolute;
-        width: 768px;
-        right: -20px;
-        top: 0; }
+      display: none; }
+
+  .start__img-second {
+    display: block;
+    width: 100vw; }
 
   .btn-header {
     display: none; }
@@ -1248,10 +1246,13 @@ footer {
     width: 280px;
     height: 56px; }
 
+  header {
+    width: 100vw; }
+
   .start__descr h1 {
     font-size: 24px; }
   .start__img img {
-    width: 339px; }
+    width: 320px; }
 
   footer .container__right-social {
     width: auto; } }
