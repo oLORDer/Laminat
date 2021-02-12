@@ -667,7 +667,8 @@ footer {
     border: none;
     color: #BEBEBE;
     font-size: 25px;
-    border-bottom: solid 1px #ffffff; }
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 10px; }
     .modal input:focus {
       color: #ffffff; }
   .modal__subtitle {
@@ -692,6 +693,10 @@ footer {
       font-size: 70px;
       top: 55px;
       right: 110px; }
+  .modal #phone {
+    opacity: 0.6; }
+    .modal #phone:focus {
+      opacity: 1; }
 
 @media screen and (max-width: 1280px) {
   .btn-header {
@@ -771,6 +776,9 @@ footer {
     margin-top: 50px;
     margin-right: 14px; }
 
+  .discount__flex__div-descr {
+    height: 103px; }
+
   footer .container {
     padding: 20px; }
     footer .container__right-btnAndNumb {
@@ -812,13 +820,15 @@ footer {
       display: none; }
 
   .start__img-second {
-    display: block;
-    width: 100vw; }
+    display: block; }
+    .start__img-second img {
+      width: 100vw; }
 
   .btn-header {
     display: none; }
     .btn-header-second {
-      display: block; }
+      display: block;
+      margin: 32px 0 0 20px; }
 
   .goto {
     display: none; }
@@ -839,7 +849,6 @@ footer {
           -ms-flex-align: center;
               align-items: center; }
       .whyme__flex__div {
-        width: 360px;
         margin-top: 40px; }
         .whyme__flex__div-descr {
           font-size: 22px; }
@@ -957,7 +966,11 @@ footer {
     .modal__subtitle {
       font-size: 25px; }
     .modal__descr {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  .menu__btn:active {
+    -webkit-filter: blur 5px;
+            filter: blur 5px; } }
 @media screen and (max-width: 425px) {
   h2 {
     font-size: 32px; }

@@ -547,6 +547,7 @@ footer
         color: #BEBEBE
         font-size: 25px
         border-bottom: solid 1px #ffffff
+        padding-bottom: 10px
         &:focus
             color: #ffffff
     &__subtitle
@@ -571,7 +572,10 @@ footer
             font-size: 70px
             top: 55px
             right: 110px
-
+    #phone
+        opacity: 0.6
+        &:focus
+            opacity: 1
     
 
 @media screen and ( max-width: 1280px )
@@ -649,7 +653,8 @@ footer
                 margin-top: 50px
                 margin-right: 14px
                 &-last 
-                    // height: 285px
+    .discount__flex__div-descr
+        height: 103px
     footer 
         & .container 
             padding: 20px
@@ -688,11 +693,13 @@ footer
             display: none
     .start__img-second
         display: block
-        width: 100vw
+        & img 
+            width: 100vw
     .btn-header
         display: none
         &-second
             display: block
+            margin: 32px 0 0 20px
     .goto
         display: none
     .whyme
@@ -703,7 +710,6 @@ footer
             justify-content: center
             align-items: center
             &__div
-                width: 360px
                 margin-top: 40px
                 &-descr
                     font-size: 22px
@@ -812,6 +818,8 @@ footer
             font-size: 25px
         &__descr
             margin-top: 20px
+    .menu__btn:active
+        filter: blur 5px
 
 @media screen and ( max-width: 425px )
     h2 
